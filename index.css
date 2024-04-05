@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: rgb(45, 46, 48);
+  padding: 16px, 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  border-bottom: 16px solid #243255;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+header button {
+  margin-left: 16px;
+}
+
+form {
+  background-color: #9da5af;
+  padding: 24px 0;
+  text-align: center;
+  display: none;
+}
+
+form h2 {
+  margin-bottom: 16px;
+}
+
+input,
+button {
+  padding: 8px;
+}
+
+button {
+  background-color: #404246;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button__reset {
+  background-color: red;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul li {
+  max-width: 25%;
+  list-style: none;
+  position: relative;
+  max-height: 280px;
+  overflow-y: hidden;
+}
+
+ul li:hover .overlay__img__link {
+  opacity: 1;
+}
+
+ul li img {
+  width: 100%;
+}
+
+.overlay__img__link {
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all ease 0.8s;
+}
+
+.overlay__img__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.frame {
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+}
